@@ -1,0 +1,11 @@
+/* styles.css */
+@media (max-width: 600px) {
+    .MuiTableCell-root {
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .MuiTableContainer-root {
+        font-size: 12px;
+    }
+}

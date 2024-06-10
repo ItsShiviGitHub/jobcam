@@ -1,0 +1,28 @@
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Box, Card, CardContent, CardActions, Button, Container, Typography, CssBaseline } from '@mui/material'
+
+function Dashboard() {
+    const navigate = useNavigate()
+    function onGoPaymentHandler() {
+        navigate('order')
+    }
+    return (
+        <Box>
+            <CssBaseline />
+            <Container maxWidth='md'>
+                <Card sx={{}}>
+                    <CardContent>
+                        <Typography variant='h4' color={'warning.main'}>Welcome To Dashboard</Typography>
+                        <CardActions>
+                            <Button onClick={onGoPaymentHandler} color='success'>Go To Orders Page</Button>
+                        </CardActions>
+                    </CardContent>
+                </Card>
+            </Container>
+
+        </Box>
+    )
+}
+
+export default Dashboard
