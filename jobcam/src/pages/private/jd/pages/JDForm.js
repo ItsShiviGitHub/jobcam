@@ -270,7 +270,6 @@ const JDForm = () => {
 
                                 <Typography>Approved By</Typography>
                                 <Stack direction="row" spacing={2}>
-
                                     <TextField
                                         {...formik.getFieldProps('approveFName')}
                                         value={formik.values.approveFName}
